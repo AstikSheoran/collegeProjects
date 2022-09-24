@@ -9,7 +9,7 @@ public class restaurantMenu{
     static double j=0.0;
 
     public static void menu() {
-        System.out.println("Welcome To Coffee Fox \n1. Burger (59.00) \n2. Fries (89.00) \n3. Cold Coffee (99.00) \n4. White Sauce Pasta (159.00) \n5. mexican wrap (129.00) \n6. Done");
+        System.out.println("Welcome To Coffee Fox \n1. Burger (Rs.59.00) \n2. Fries (Rs.89.00) \n3. Cold Coffee (Rs.99.00) \n4. White Sauce Pasta (Rs.159.00) \n5. mexican wrap (Rs.129.00) \n6. Done");
     }
 
     public static double itemPrice(int foodItem) {
