@@ -6,9 +6,10 @@ public class restaurantMenu{
     private static double itemPrice;
     static boolean ordering = true;
     static Scanner input = new Scanner(System.in);
+    static double j=0.0;
 
     public static void menu() {
-        System.out.println("Welcome \n1. Burger ($2.00) \n2. Fries ($1.50)\n3. Soda ($1.00) \n4. Done");
+        System.out.println("Welcome To Coffee Fox \n1. Burger (59.00) \n2. Fries (89.00) \n3. Cold Coffee (99.00) \n4. White Sauce Pasta (159.00) \n5. mexican wrap (129.00) \n6. Done");
     }
 
     public static double itemPrice(int foodItem) {
@@ -38,7 +39,7 @@ public class restaurantMenu{
             itemPrice = 129.00;
         }
         quantity();
-        return itemPrice;
+        return j;
     }
 
     public static double quantity() {
@@ -50,13 +51,13 @@ public class restaurantMenu{
 
     public static double subTotal(double quantity, double itemPrice) {
         double subTotal = quantity * itemPrice;
-        System.out.println("Subtotal: " + subTotal);
+        System.out.println("Subtotal: Rs." + subTotal);
+        j=subTotal;
         return subTotal;
     }
 
     public static void done(double runningTotal) {
         ordering = false;
-        System.out.println(runningTotal);
         System.out.println("Enjoy your meal");
     }
 
@@ -64,30 +65,30 @@ public class restaurantMenu{
         int menuOption;
         int foodItem = 0;
         input = new Scanner(System.in);
-        do {
-            double runningTotal = 0;
+        double runningTotal = 0;
+        while(ordering){
             menu();
             menuOption = input.nextInt();
             switch (menuOption) {
             case 1:
                 foodItem = 1;
-                itemPrice(foodItem);
+                runningTotal += itemPrice(foodItem);
                 break;
             case 2:
                 foodItem = 2;
-                itemPrice(foodItem);
+                runningTotal += itemPrice(foodItem);
                 break;
             case 3:
                 foodItem = 3;
-                itemPrice(foodItem);
+                runningTotal += itemPrice(foodItem);
                 break;
             case 4:
                 foodItem = 4;
-                itemPrice(foodItem);
+                runningTotal += itemPrice(foodItem);
                 break;
             case 5:
                 foodItem = 5;
-                itemPrice(foodItem);
+                runningTotal += itemPrice(foodItem);
                 break;
             case 6:
                 done(runningTotal);
@@ -95,10 +96,7 @@ public class restaurantMenu{
             default:
                 System.out.println("Invalid option.");
             }
-        } while (ordering);
-        {
-            subTotal(quantity(), itemPrice(foodItem));
-            runningTotal = runningTotal + subTotal(quantity(), itemPrice(foodItem));
-        }
-    }
+            }
+            System.out.println("Total amount: Rs." + runningTotal);
+}
 }
