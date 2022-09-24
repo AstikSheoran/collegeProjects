@@ -13,19 +13,29 @@ public class restaurantMenu{
 
     public static double itemPrice(int foodItem) {
         if (foodItem == 1) {
-            // burger= $2.00
+            // burger= ₹59
             System.out.println("You've ordered a burger");
-            itemPrice = 2.00;
+            itemPrice = 59.00;
         }
         if (foodItem == 2) {
-            // fries = $1.50
+            // fries = ₹89
             System.out.println("You've ordered fries");
-            itemPrice = 1.50;
+            itemPrice = 89.00;
         }
         if (foodItem == 3) {
-            // soda = $1.00
-            System.out.println("You've ordered a soda");
-            itemPrice = 1.00;
+            // cold coffee = ₹99
+            System.out.println("You've ordered a cold coffee");
+            itemPrice = 99.00;
+        }
+        if (foodItem == 4) {
+            // white sauce pasta = ₹159
+            System.out.println("You've ordered a white sauce pasta");
+            itemPrice = 159.00;
+        }
+        if (foodItem == 5) {
+            // mexican wrap = ₹129
+            System.out.println("You've ordered a mexican wrap");
+            itemPrice = 129.00;
         }
         quantity();
         return itemPrice;
@@ -72,6 +82,14 @@ public class restaurantMenu{
                 itemPrice(foodItem);
                 break;
             case 4:
+                foodItem = 4;
+                itemPrice(foodItem);
+                break;
+            case 5:
+                foodItem = 5;
+                itemPrice(foodItem);
+                break;
+            case 6:
                 done(runningTotal);
                 break;
             default:
