@@ -35,7 +35,7 @@ public class restaurantMenu{
         }
         if (foodItem == 5) {
             // mexican wrap = ₹129
-            System.out.println("You've ordered a mexican wrap hi");
+            System.out.println("You've ordered a mexican wrap ");
             itemPrice = 129.00;
         }
         quantity();
