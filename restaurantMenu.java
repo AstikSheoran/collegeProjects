@@ -98,5 +98,5 @@ public class restaurantMenu{
             }
             }
             System.out.println("Total amount: Rs." + runningTotal);
-}
+    }
 }
