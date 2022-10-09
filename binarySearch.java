@@ -12,7 +12,7 @@ public class binarySearch {
            }  
            mid = (first + last)/2;  
         }  
-        if ( first > last ){  
+        if ( first > last ){
            System.out.println("Element is not found!");  
         }  
       }  

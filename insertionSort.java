@@ -1,7 +1,6 @@
 class insertionSort {
     /*Function to sort array using insertion sort*/
-    void sort(int arr[])
-    {
+    void sort(int arr[]){
         int n = arr.length;
         for (int i = 1; i < n; ++i) {
             int key = arr[i];
@@ -13,8 +12,7 @@ class insertionSort {
             arr[j + 1] = key;
         }
     }
-    static void printArray(int arr[])
-    {
+    static void printArray(int arr[]){
         int n = arr.length;
         for (int i = 0; i < n; ++i)
             System.out.print(arr[i] + " ");
@@ -22,8 +20,7 @@ class insertionSort {
         System.out.println();
     }
 
-    public static void main(String args[])
-    {
+    public static void main(String args[]){
         int arr[] = { 12, 11, 13, 5, 6 };
   
         insertionSort ob = new insertionSort();
