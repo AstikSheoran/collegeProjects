@@ -23,3 +23,10 @@ Project 4 :-
 
 Project 5 :-
  
+ This Project is based on Selection Sort.
+ Name :- selectionSort.java
+
+Project 6 :-
+ 
+ This Project is based on Insertion Sort.
+ Name :- insertionSort.java
