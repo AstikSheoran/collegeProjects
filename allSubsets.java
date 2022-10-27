@@ -1,4 +1,3 @@
-import java.util.*;
 public class allSubsets {
     public static void main(String[] args) {   
         String str = "ASTIK";  
