@@ -1,4 +1,3 @@
-import java.util.*;
 public class copyArray {
     public static void main(String args[]){
         int arr1[]=  new int [] {213, 12, 87, 8, 5};  
